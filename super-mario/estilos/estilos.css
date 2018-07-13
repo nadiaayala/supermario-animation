@@ -1,0 +1,51 @@
+body{
+    background-image: url(images/fundo.jpg);
+   display: flex;   
+    overflow: hidden;
+    position: absolute;  
+    justify-content: flex-start;
+    align-content: flex-end;   
+}
+
+body div img {
+    margin-top: 25vw;
+      
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   
+    
+ 
+}
+
+@keyframes mover {
+    0%{
+        transform: translateX(0px);
+
+
+    }
+
+    33%{
+        transform: translateX(600px);
+        transition-delay: 1s;
+    }
+
+    66%{
+        transform: translateX(1200px);
+
+    }
+
+    99%{
+        transition-duration: 1s;
+        
+        transform: rotatey(180deg);
+        
+       
+    }
+
+    100%{
+      
+        
+    }
+    
+}
